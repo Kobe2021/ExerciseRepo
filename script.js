@@ -8,58 +8,92 @@
 ...
 */
 
-let firstVariable = "Hello World"
-firstVariable = 12
-let secondVariable = firstVariable
-secondVariable = "Hello"
-// firstVariable is 12
-let yourName = "Kobe Wright"
-console.log("Hello, my name is " + yourName)
+// let firstVariable = "Hello World"
+// firstVariable = 12
+// let secondVariable = firstVariable
+// secondVariable = "Hello"
+// // firstVariable is 12
+// let yourName = "Kobe Wright"
+// console.log("Hello, my name is " + yourName)
 
-// Part C. Booleans
-const a = 4;
-  const b = 53;
-  const c = 57;
-  const d = 16;
-  const e = 'Kevin';
+// // Part C. Booleans
+// const a = 4;
+//   const b = 53;
+//   const c = 57;
+//   const d = 16;
+//   const e = 'Kevin';
 
-  console.log(a < b);
-  console.log(c > d);
-  console.log('Name' === 'Name');
-  // FOR THE NEXT TWO, USE ONLY && OR ||
-  console.log(true || false);
-  console.log(false && false && false && false && false || true);
-  console.log(false == false)
-  console.log(e === 'Kevin');
-  console.log(a + b === c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
-  console.log(a * a === d); // note: the answer is a simple arithmetic equation, not something "weird"
-  console.log(48 == '48');
+//   console.log(a < b);
+//   console.log(c > d);
+//   console.log('Name' === 'Name');
+//   // FOR THE NEXT TWO, USE ONLY && OR ||
+//   console.log(true || false);
+//   console.log(false && false && false && false && false || true);
+//   console.log(false == false)
+//   console.log(e === 'Kevin');
+//   console.log(a + b === c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
+//   console.log(a * a === d); // note: the answer is a simple arithmetic equation, not something "weird"
+//   console.log(48 == '48');
 
-  // D. The farm
-  let animal = "cow"
-  if(animal === "cow"){
-    console.log("mooooo")
-  } else {
-    console.log("Hey! You're not a cow.")
-  }
+//   // D. The farm
+//   let animal = "cow"
+//   if(animal === "cow"){
+//     console.log("mooooo")
+//   } else {
+//     console.log("Hey! You're not a cow.")
+//   }
 
-  //E. Driver's Ed
-  let age = 24
-  if(age >= 16){
-    console.log("Here are the keys!")
-  } else {
-    console.log("Sorry, you're too young.")
-  }
+//   //E. Driver's Ed
+//   let age = 24
+//   if(age >= 16){
+//     console.log("Here are the keys!")
+//   } else {
+//     console.log("Sorry, you're too young.")
+//   }
 
-// Loops
+// // Loops
+// //A. The basics
+// for(let i = 0; i <= 10; i++){
+//     console.log(i)
+// }
+// //Write a loop that will print out all the numbers from 10 up to and including 400
+// for(let i = 10; i <= 400; i++){
+//     console.log(i)
+// }
+// //Write a loop that will print out every third number starting with 12 and going no higher than 4000
+// for(let i = 12; i <= 4000; i+=3){
+//     console.log(i)
+// }
+
+// //B. Get even
+// for(let i = 1; i < 100; i++){
+//     if(i % 2 === 0){
+//         console.log(i + " is an even number")
+//     } else {
+//         console.log(i)
+//     }
+// }
+
+// //C. Give me Five
+// for(let i = 0; i <= 100; i++){
+//     if(i % 3 === 0 && i % 5 === 0){
+//         console.log("I found a " + i + " Three is a crowd");
+//         console.log("I found a " + i + " High five!")
+//     } else if(i % 5 ===0){
+//         console.log("I found a " + i + " High five!")
+//     } else if(i % 3 === 0){
+//         console.log("I found a " + i + " Three is a crowd")
+//     }
+// }
+
+//D. Savings account
+//Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
+let bank_account = 0
 for(let i = 0; i <= 10; i++){
-    console.log(i)
+    bank_account += i
 }
-//Write a loop that will print out all the numbers from 10 up to and including 400
-for(let i = 10; i <= 400; i++){
-    console.log(i)
+console.log(`Bank Account: ${bank_account}`);
+for(let i = 0; i <= 100; i++){
+    bank_account += i
 }
-//Write a loop that will print out every third number starting with 12 and going no higher than 4000
-for(let i = 12; i <= 4000; i+=3){
-    console.log(i)
-}
+console.log(`Bank Account: ${bank_account * 2}`);
