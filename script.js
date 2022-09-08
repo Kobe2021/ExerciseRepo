@@ -197,3 +197,6 @@ const kristynsCloset = [
   console.log(`Thom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][0]} and ${thomsCloset[2][0]}`)
   //8.
   thomsCloset[1][2] = "Footie Pajamas"
+
+
+  
