@@ -198,5 +198,80 @@ const kristynsCloset = [
   //8.
   thomsCloset[1][2] = "Footie Pajamas"
 
+//IV. Functions
+function printGreeting(name){
+  return `Hello there, ${name}`
+}
 
-  
+console.log(printGreeting("Slimer"))
+
+function printCool(name){
+  return `${name} is cool`
+}
+console.log(printCool("Captain Reynolds"))
+//Problem
+function calculateCube(num){
+  return Math.pow(num);
+}
+
+console.log(calculateCube(5));
+
+function isVowel(character){
+  if(character.length === 1){
+    if(character === "a"){
+      return true
+    } else if(character === "e"){
+      return true
+    } else if(character === "i"){
+      return true
+    } else if(character === "o"){
+      return true
+    } else if(character === "u"){
+      return true
+    } else {
+      return false
+    }
+  } else {
+    return "More than one character!"
+  }
+}
+console.log(isVowel("a"));
+
+function getTwoLengths(string1, string2){
+  let num1 = string1.length
+  let num2 = string2.length
+  const numArr = [num1, num2]
+  return numArr
+}
+console.log(getTwoLengths("Hank", "Hippopopalous"));
+
+function getMultipleLengths([string_1, string_2, string3, string4, string5]){
+  // let val1 = string_1.length
+  // let val2 = string_2.length
+  // let val3 = string3.length
+  // let val4 = string4.length
+  // let val5 = string5.length
+  const numArray = [string_1.length, string_2.length, string3.length, string4.length, string5.length]
+  return numArray
+}
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
+function maxOfThree(val1, val2, val3){
+  if(val1 > val2 && val1 > val3){
+    return val1
+  } else if(val2 > val1 && val2 > val3){
+    return val2
+  } else if(val3 > val1 && val3 > val2){
+    return val3
+  } else if(val1 === val2 && val1 > val3){
+    return val1
+  } else if(val2 === val3 && val2 > val1){
+    return val2
+  } else if(val3 === val1 && val3 > val2){
+    return val3
+  } else {
+    return "The numbers are all the same!"
+  }
+}
+console.log(maxOfThree(6, 9, 1));
+
